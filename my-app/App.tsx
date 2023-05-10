@@ -1,4 +1,3 @@
-import React from 'react';
 import PaintingPreview from './src/components/PaintingPreview';
 import './App.css';
 
