@@ -1,25 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import HomePage from "./components/HomePage";
-// import AboutPage from "./components/AboutPage";
-// import ContactPage from "./components/ContactPage";
-// import PaintingsPage from "./components/PaintingsPage";
-import Root from "./routes/root";
+import React from 'react';
+import { Route } from 'react-router-dom';
+import Home from './components/HomePage';
 
-function AppRouter() {
+const RouterComponent: React.FC = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Root />} />
-        {/* <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact">
-          <ContactPage />
-        </Route>
-        <Route path="/paintings">
-          <PaintingsPage />
-        </Route> */}
-      </Routes>
-    </Router>
-  );
-}
+    <Route  path="/" Component={Home} />
 
-export default AppRouter;
+  );
+};
+
+export default RouterComponent;
