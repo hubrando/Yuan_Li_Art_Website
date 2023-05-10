@@ -1,3 +1,15 @@
+.painting-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.painting-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 html {
   box-sizing: border-box;
 }

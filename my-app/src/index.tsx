@@ -1,4 +1,6 @@
-import ReactDOM from "react-dom";
-import AppRouter from "./router";
+import { createRoot } from 'react-dom/client';
+import HomePage from './components/HomePage';
 
-ReactDOM.render(<AppRouter />, document.getElementById("root"));
+const container = document.getElementById('app');
+const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+root.render(<HomePage />);

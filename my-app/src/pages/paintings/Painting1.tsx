@@ -1,8 +1,12 @@
-const Painting1 = () => {
+import React from 'react';
+import '../index.css';
+
+const Painting1: React.FC = () => {
   return (
-    <div>
+    <div className="painting-image">
       <h1>Painting 1</h1>
-      <p>Information about Painting 1 goes here.</p>
+      <img src="https://www.theartist.me/wp-content/uploads/2015/07/The-Starry-Night.jpg" alt="Painting 1" />
+      <p>This is the first painting!</p>
     </div>
   );
 };
