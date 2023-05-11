@@ -2,8 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import About from './components/AboutPage';
 import Contact from './components/ContactPage';
-import Painting1 from './pages/paintings/Painting1';
-import Painting2 from './pages/paintings/Painting2';
+import PaintingDetail from './pages/paintings/PaintingDetail';
 // import Painting3 from './pages/paintings/Painting3';
 
 const RouterComponent: React.FC = () => {
@@ -11,8 +10,7 @@ const RouterComponent: React.FC = () => {
     <>
       <Route path="/about" Component={About} />
       <Route path="/contact" Component={Contact} />
-      <Route path="/paintings/1" Component={Painting1} />
-      <Route path="/paintings/2" Component={Painting2} />
+      <Route path="/paintings/paintingdetail" Component={PaintingDetail} />
       {/* <Route path="/paintings/3" Component={Painting3} /> */}
     </>
   );
