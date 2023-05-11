@@ -1,5 +1,5 @@
-import PaintingPreview from './src/components/PaintingPreview';
 import './src/index.css';
+import { Link } from 'react-router-dom';
 
 export default function App() {
   const artist = {
@@ -25,9 +25,16 @@ export default function App() {
   return (
     <div>
       <h1 className="title">Welcome to Yuan Li's Website!!!</h1>
-      <div className="painting-container">
+      <div className="painting-preview-headers">
         {artist.paintings.map(painting => (
-          <PaintingPreview key={painting.id} title={painting.title} artist={artist.name} imageUrl={painting.imageUrl} description={painting.description} id={painting.id} />
+          <div key={painting.id} className="painting-preview-headers">
+            <h2>{painting.title}</h2>
+            <Link to={`/paintings/${painting.id}`}>
+              <img src={painting.imageUrl} alt={painting.title} />
+            </Link>
+            <p>By {artist.name}</p>
+            <p>{painting.description}</p>
+          </div>
         ))}
       </div>
       <br></br>

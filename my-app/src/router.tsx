@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Home from './components/HomePage';
 import About from './components/AboutPage';
 import Contact from './components/ContactPage';
 import Painting1 from './pages/paintings/Painting1';
@@ -10,7 +9,6 @@ import Painting2 from './pages/paintings/Painting2';
 const RouterComponent: React.FC = () => {
   return (
     <>
-      <Route path="/" Component={Home} />
       <Route path="/about" Component={About} />
       <Route path="/contact" Component={Contact} />
       <Route path="/paintings/1" Component={Painting1} />

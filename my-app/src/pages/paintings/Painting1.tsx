@@ -1,10 +1,17 @@
-const Painting1 = () => {
+import { Link } from 'react-router-dom';
+import '../index.css';
+
+export default function Painting1() {
   return (
     <div>
-      <h1>Painting 1</h1>
-      <p>Information about Painting 1 goes here.</p>
+      <h2>Painting 1</h2>
+      <div className="container">
+        <Link to="/">
+          <img className="painting-preview-headers" src="https://www.theartist.me/wp-content/uploads/2015/07/The-Starry-Night.jpg" alt="Painting 1" />
+        </Link>
+      </div>
+      <p>Yuan Li</p>
+      <p>This is the first painting!</p>
     </div>
   );
-};
-
-export default Painting1;
+}
