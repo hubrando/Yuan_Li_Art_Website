@@ -1,3 +1,11 @@
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
 .painting-preview-headers {
   display: flex;
   flex-direction: column;
@@ -15,16 +23,12 @@
   margin-bottom: 10px;
 }
 
-.painting-preview-description {
+.left-align-text {
   height: 100%;
   max-width: 96%;
   line-height: 1.2;
   padding-left: 1%;
   text-align: left;
-}
-
-h2 {
-  text-align: center;
 }
 
 .title {
