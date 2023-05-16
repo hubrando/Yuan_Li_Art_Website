@@ -21,21 +21,21 @@ function App() {
     {
       id: 1,
       title: "Starry Night",
-      imageUrl: "https://www.example.com/starrynight.jpg",
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
       description: "A painting of the night sky.",
       artist: "Vincent van Gogh"
     },
     {
       id: 2,
       title: "The Persistence of Memory",
-      imageUrl: "https://www.example.com/persistenceofmemory.jpg",
+      imageUrl: "https://cdn.britannica.com/10/182610-050-77811599/The-Persistence-of-Memory-canvas-collection-Salvador-1931.jpg",
       description: "A painting of melting clocks.",
       artist: "Salvador Dali"
     },
     {
       id: 3,
       title: "The Kiss",
-      imageUrl: "https://www.example.com/thekiss.jpg",
+      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
       description: "A painting of a couple kissing.",
       artist: "Gustav Klimt"
     }

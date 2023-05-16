@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import './Nav.module.css'
 
 export default function Nav() {
   return (
@@ -12,6 +13,11 @@ export default function Nav() {
         <li>
           <NavLink to="/about" end>
             About
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/contact" end>
+            Contact
           </NavLink>
         </li>
         <li>

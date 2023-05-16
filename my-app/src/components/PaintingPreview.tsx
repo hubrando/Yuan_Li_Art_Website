@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Painting } from '../../App';
+import '../index.css'
 
 interface PaintingPreviewProps {
   paintings: Painting[];
@@ -16,6 +17,7 @@ export default function PaintingPreview({ paintings }: PaintingPreviewProps) {
             <Link to={`/paintings/${painting.id}`}>
               <img src={painting.imageUrl} alt={painting.title} />
             </Link>
+            <br />
             By {painting.artist}
           </div>
           <br />
@@ -23,7 +25,9 @@ export default function PaintingPreview({ paintings }: PaintingPreviewProps) {
             Description: {painting.description}
           </div>
         </div>
-      ))}
+        )
+      )
+    }
     </div>
   );
 }
