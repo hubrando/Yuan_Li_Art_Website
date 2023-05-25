@@ -18,7 +18,6 @@ export default function PaintingPreview({ paintings }: PaintingPreviewProps) {
               <img src={painting.imageUrl} alt={painting.title} />
             </Link>
             <br />
-            By {painting.artist}
           </div>
           <br />
           <div className='painting-preview-description'>

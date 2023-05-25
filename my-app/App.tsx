@@ -5,6 +5,7 @@ import PaintingDetail from './src/pages/paintings/PaintingDetail';
 import PaintingPreview from './src/components/PaintingPreview';
 import './App.css';
 import Nav from './src/components/nav/Nav';
+import { ImageCarouselProps } from './src/components/ImageCarousel';
 
 
 export type Painting = {
@@ -12,7 +13,6 @@ export type Painting = {
   title: string;
   imageUrl: string;
   description: string;
-  artist: string;
 }
 
 
@@ -20,25 +20,29 @@ function App() {
   const paintings: Painting[] = [
     {
       id: 1,
-      title: "Starry Night",
-      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+      title: "Flower Basket",
+      imageUrl: "src/assets/Flower basket.jpeg",
       description: "A painting of the night sky.",
-      artist: "Vincent van Gogh"
     },
     {
       id: 2,
-      title: "The Persistence of Memory",
-      imageUrl: "https://cdn.britannica.com/10/182610-050-77811599/The-Persistence-of-Memory-canvas-collection-Salvador-1931.jpg",
+      title: "Hydrangea",
+      imageUrl: "src/assets/Hydrangea.jpeg",
       description: "A painting of melting clocks.",
-      artist: "Salvador Dali"
     },
     {
       id: 3,
-      title: "The Kiss",
-      imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+      title: "Child at Beach",
+      imageUrl: "src/assets/Child at Beach - Copy.jpeg",
       description: "A painting of a couple kissing.",
-      artist: "Gustav Klimt"
     }
+  ];
+
+  const images = [
+    'src/assets/Flower basket.jpeg',
+    'src/assets/Hydrangea.jpeg',
+    'src/assets/IMG_0116.jpeg',
+    // Add more image URLs here
   ];
 
   return (
