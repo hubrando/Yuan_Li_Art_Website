@@ -14,21 +14,18 @@ const RouterComponent: React.FC = () => {
       title: "Starry Night",
       imageUrl: "https://www.example.com/starrynight.jpg",
       description: "A painting of the night sky.",
-      artist: "Vincent van Gogh"
     },
     {
       id: 2,
       title: "The Persistence of Memory",
       imageUrl: "https://www.example.com/persistenceofmemory.jpg",
       description: "A painting of melting clocks.",
-      artist: "Salvador Dali"
     },
     {
       id: 3,
       title: "The Kiss",
       imageUrl: "https://www.example.com/thekiss.jpg",
       description: "A painting of a couple kissing.",
-      artist: "Gustav Klimt"
     }
   ];
 

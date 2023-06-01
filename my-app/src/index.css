@@ -1,11 +1,3 @@
-h2 {
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-}
-
 .painting-preview-headers {
   display: flex;
   flex-direction: column;
@@ -17,10 +9,14 @@ h3 {
 }
 
 .painting-preview-headers img {
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 70%;
+  max-height: 70%;
   object-fit: contain;
   margin-bottom: 10px;
+}
+
+.painting-preview-description {
+  padding-left: 20px
 }
 
 .left-align-text {

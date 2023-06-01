@@ -14,7 +14,7 @@ export default function PaintingDetail({ paintings }: PaintingDetailProps) {
     <div className='painting-preview-headers'>
       <h2>Title: {painting?.title}</h2>
       <img src={painting?.imageUrl} alt={painting?.title} />
-      <p>Artist: {painting?.artist}</p>
+      <p>Artist: Yuan Li</p>
       <p>Description: {painting?.description}</p>
     </div>
   );
